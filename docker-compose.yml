@@ -1,0 +1,14 @@
+mongo-db:
+  build: ./db-server
+  #image: rmelos/dockerhubmongo
+  ports:
+    - 27017
+  hostname: 172.17.0.3
+
+app-ms:
+  build: .
+  #image: rmelos/nodeandmongotutorial_app-ms
+  ports:
+    - "5000:5000"
+  links:
+    - mongo-db

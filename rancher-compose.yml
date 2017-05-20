@@ -1,0 +1,4 @@
+app-ms:
+  scale: 1
+mongo-db:
+  scale: 1
