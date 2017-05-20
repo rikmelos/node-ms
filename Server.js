@@ -24,16 +24,18 @@ model2.find({}, function() {
     console.log("this will print out first");
 });
 */
+
+/*
 var mongoose = require('mongoose')
 var conn = mongoose.createConnection('mongodb://172.17.0.3:27017/db1');
 //var conn2 = mongoose.createConnection('mongodb://localhost/db2');
 var Schema = new mongoose.Schema({})
 var mongoOp = conn.model('User', Schema);
 //var model2 = conn2.model('Item', Schema);
+*/
 
 
 
-/*
 var mongoose    =   require('mongoose');
 mongoose.Promise = global.Promise;
 
@@ -46,9 +48,9 @@ var userSchema  = {
     "userPassword" : String
 };
 mongoOp =  userdb.model('userLogin',userSchema);
-*/
 
-/*
+
+
 //var sessiondb = mongoose.connect('mongodb://mongodb:27017/MDB');
 var sessiondb = mongoose.createConnection('mongodb://mongodbhost:27017/MDB2');
 
@@ -59,7 +61,7 @@ var sessionSchema  = {
 };
 
 session = sessiondb.model('userSession',sessionSchema);
-*/
+
 
 
 
